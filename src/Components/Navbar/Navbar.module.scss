@@ -1,0 +1,54 @@
+.navbar {
+    background: $radial-bcg;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: $d-c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 5px 60px;
+    user-select: none;
+    z-index: 777;
+}
+
+.active {
+    color: $p-c;
+}
+
+.logo {
+    height: 60px;
+    padding: 0;
+
+    img {
+        height: 100%;
+    }
+}
+
+.NavItems {
+    display: flex;
+    align-items: center;
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .responsive {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

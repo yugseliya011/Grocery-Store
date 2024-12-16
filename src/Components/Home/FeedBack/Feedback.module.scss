@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .newsletterContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 4000px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nameInput {
+    display: flex;
+    font-size: 20px;
+  }
+  
+  .textArea {
+    margin-bottom: 1rem;
+  }
+  
+  .whiteBorder {
+    border-color: white !important;
+  }
+  
+  .submitButton {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 7px 28px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    
+    &:hover {
+      border: 1px solid white;
+      background: #8858ed;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    &:active {
+      background-color: #3003fc;
+      color: aliceblue;
+    }
+  }
+  

@@ -1,0 +1,124 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 400;
+}
+
+.Cart {
+    width: 40%;
+    // margin: 10%;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $Lora;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 500;
+
+    @media (max-width: 768px) {
+        width: 500px;
+    }
+
+    @media (max-width: 568px) {
+        width: 100%;
+    }
+}
+.nev {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    border-bottom: 1px solid black;
+    // margin: 20px;
+    h2 {
+        font-weight: 300;
+        font-size: larger;
+        font-family: $Lora;
+    }
+
+    button {
+        // font-size: 16px;
+        font-weight: 300;
+        font-family: $Lora;
+        font-size: larger;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.upCart {
+    height: 100%;
+}
+
+.CartProduct {
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    height: 100%;
+}
+
+.CartProduct::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.delivery_checkout {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: medium;
+}
+.delivery_date {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 300;
+    font-size: medium;
+}
+.delivery_payment {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: medium;
+}
+.pay {
+    display: flex;
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 100%;
+        color: #ffffff;
+        background-color: black;
+        font-weight: 300;
+        font-size: medium;
+        height: 40px;
+    }
+}
+.Cart_video {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    video {
+        width: 80%;
+    }
+}

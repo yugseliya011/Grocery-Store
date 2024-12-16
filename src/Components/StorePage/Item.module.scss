@@ -1,0 +1,47 @@
+.GearItem {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 25px;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            background-color: #ffffff;
+            mix-blend-mode: multiply;
+            border-radius: 25px;
+        }
+    }
+
+    .details {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 2/1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        overflow: hidden;
+
+        h1 {
+            font-size: 25px;
+            font-family: $Lora;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-family: $Mulish;
+        }
+    }
+}

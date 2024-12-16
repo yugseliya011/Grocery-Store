@@ -1,0 +1,45 @@
+.searchContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.TextField {
+    margin: 8px 0;
+    flex-grow: 1;
+    position: relative;
+
+    input {
+        padding: 10px;
+        padding-right: 20px;
+        width: 100%;
+        transition: border-color 0.3s ease;
+        border-bottom: 1px solid $p-c;
+        color: $d-c;
+
+        &:focus {
+            border-color: $p-c;
+            outline: none;
+        }
+    }
+
+    label {
+        color: $p-c;
+    }
+}
+
+.iconContainer {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon {
+    font-size: 24px;
+    color: $p-c;
+}

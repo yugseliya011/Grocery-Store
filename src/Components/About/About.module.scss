@@ -1,0 +1,38 @@
+.About {
+    min-height: calc(100vh - 20px);
+    padding-top: 80px;
+
+    .intro_section {
+        position: relative;
+        height: calc(100vh - 80px);
+        width: 100%;
+        background: $d-c;
+        // background: url("https://wallpapers.com/images/featured/4k-gaming-background-bud9k5ffqi3r2ds9.jpg") no-repeat center center fixed;
+        background: url("@/assets/Images/Storm.jpg") no-repeat center center fixed;
+        background-size: cover;
+        transition: background-position 0.1s;
+        user-select: none;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2); 
+        z-index: 1; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .imageContainer {
+            width: 30%;
+            filter: drop-shadow(0px 0px 20px $s-c);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

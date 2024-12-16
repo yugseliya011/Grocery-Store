@@ -1,0 +1,61 @@
+@use "./_variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    min-height: 100vh;
+    font-family: $Roboto;
+
+    // Dark Theme
+    background-color: $d-bcg !important;
+    color: $d-c !important;
+
+    // Light Theme
+    &[data-theme="light"] {
+        background-color: $l-bcg !important;
+        color: $l-c !important;
+    }
+
+    // Selection Colors
+    *::selection {
+        background-color: $s-c !important;
+        color: $d-c !important;
+    }
+}
+
+#root {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button1 {
+    font-family: $Lora;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 25px;
+    padding: 7px 28px;
+    border: none;
+    outline: none;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 5px 21px;
+    }
+}
